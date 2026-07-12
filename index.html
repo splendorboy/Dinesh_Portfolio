@@ -27,7 +27,6 @@ body{
 h1,h2,h3{font-family:'Bebas Neue',Impact,'Arial Narrow',sans-serif;letter-spacing:.5px;}
 a{color:inherit;text-decoration:none;}
 img{max-width:100%;display:block;}
-
 /* NAV */
 nav{
   position:fixed;top:0;left:0;right:0;z-index:100;
@@ -44,7 +43,6 @@ nav{
 .nav-links a:hover{opacity:1;color:var(--neon);}
 .nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;}
 .nav-toggle span{width:26px;height:2px;background:var(--text);}
-
 /* HERO */
 .hero{
   min-height:100vh;
@@ -81,7 +79,6 @@ nav{
 .btn-primary:hover{background:var(--neon-dim);transform:translateY(-2px);box-shadow:0 8px 24px rgba(63,169,245,0.35);}
 .btn-outline{border:1px solid var(--line);color:var(--text);}
 .btn-outline:hover{border-color:var(--neon);color:var(--neon);}
-
 .hero-photo{position:relative;}
 .photo-frame{
   position:relative;
@@ -109,20 +106,17 @@ nav{
 }
 .rec-dot .dot{width:8px;height:8px;border-radius:50%;background:#ff3c3c;animation:pulse 1.5s infinite;}
 @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.3;}}
-
 .scroll-cue{
   position:absolute;bottom:36px;left:6%;font-size:11px;letter-spacing:2px;color:var(--muted);
   display:flex;align-items:center;gap:10px;text-transform:uppercase;
 }
 .scroll-cue::after{content:'';width:1px;height:30px;background:linear-gradient(var(--neon),transparent);animation:scrolldown 1.6s infinite;}
 @keyframes scrolldown{0%{opacity:0;}50%{opacity:1;}100%{opacity:0;}}
-
 section{padding:120px 6%;position:relative;}
 .section-head{margin-bottom:60px;max-width:700px;}
 .section-num{color:var(--neon);font-size:13px;letter-spacing:3px;text-transform:uppercase;margin-bottom:14px;display:block;}
 .section-head h2{font-size:clamp(36px,5vw,56px);text-transform:uppercase;line-height:1.05;}
 .section-head p{color:var(--muted);margin-top:16px;font-size:16px;max-width:560px;}
-
 /* ABOUT */
 .about-wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
 .about-text p{color:var(--muted);font-size:17px;line-height:1.8;margin-bottom:20px;}
@@ -139,7 +133,6 @@ section{padding:120px 6%;position:relative;}
 .tl-year{color:var(--neon);font-size:13px;letter-spacing:1px;margin-bottom:6px;}
 .tl-role{font-size:19px;font-weight:700;margin-bottom:4px;}
 .tl-place{color:var(--muted);font-size:14px;}
-
 /* SERVICES */
 .services-cols{display:grid;grid-template-columns:1fr 1fr;gap:36px;}
 .service-card{
@@ -158,7 +151,6 @@ section{padding:120px 6%;position:relative;}
 }
 .service-card li:last-child{border-bottom:none;}
 .service-card li::after{content:'→';color:var(--muted);font-size:14px;}
-
 /* SKILLS */
 .skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
 .skill-card{
@@ -169,7 +161,6 @@ section{padding:120px 6%;position:relative;}
 .skill-card .label{font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-top:8px;}
 .bar{height:3px;background:var(--line);margin-top:18px;overflow:hidden;}
 .bar-fill{height:100%;background:var(--neon);width:0;transition:width 1.4s ease;}
-
 /* PORTFOLIO */
 .filter-row{display:flex;gap:12px;margin-bottom:40px;flex-wrap:wrap;}
 .filter-btn{
@@ -206,7 +197,6 @@ section{padding:120px 6%;position:relative;}
 .work-card:hover .play-btn svg{fill:#0a0a0a;}
 .work-info h3{font-size:20px;text-transform:none;margin-bottom:4px;}
 .work-info span{color:var(--muted);font-size:13px;}
-
 /* TESTIMONIAL */
 .testimonial-wrap{
   background:var(--card);border:1px solid var(--line);padding:80px 60px;position:relative;
@@ -219,7 +209,6 @@ section{padding:120px 6%;position:relative;}
 .testimonial-wrap p.quote-text{font-size:24px;line-height:1.6;margin-bottom:30px;position:relative;z-index:1;}
 .testimonial-name{color:var(--neon);font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:700;}
 .testimonial-role{color:var(--muted);font-size:14px;margin-top:4px;}
-
 /* CONTACT */
 .contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;}
 .contact-info h2{font-size:clamp(40px,6vw,68px);text-transform:uppercase;margin-bottom:24px;line-height:1;}
@@ -237,7 +226,6 @@ section{padding:120px 6%;position:relative;}
 .contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:var(--neon);}
 .contact-form input::placeholder,.contact-form textarea::placeholder{color:var(--muted);}
 .contact-form label{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:8px;}
-
 footer{
   border-top:1px solid var(--line);padding:36px 6%;display:flex;justify-content:space-between;
   align-items:center;color:var(--muted);font-size:13px;flex-wrap:wrap;gap:12px;
@@ -245,7 +233,6 @@ footer{
 footer .socials{display:flex;gap:20px;}
 footer .socials a{color:var(--muted);transition:.2s;}
 footer .socials a:hover{color:var(--neon);}
-
 /* MODAL */
 .modal{
   position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:200;display:none;
@@ -259,11 +246,9 @@ footer .socials a:hover{color:var(--neon);}
   width:36px;height:36px;cursor:pointer;font-size:18px;
 }
 .modal-title{padding:18px 24px;font-size:16px;color:var(--muted);border-top:1px solid var(--line);}
-
 /* reveal animation */
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease, transform .8s ease;}
 .reveal.in{opacity:1;transform:translateY(0);}
-
 @media(max-width:900px){
   .nav-links{position:fixed;top:70px;right:0;background:var(--charcoal);flex-direction:column;
     width:220px;padding:24px;gap:22px;border:1px solid var(--line);transform:translateX(110%);transition:.3s;}
@@ -285,7 +270,6 @@ footer .socials a:hover{color:var(--neon);}
 </style>
 </head>
 <body>
-
 <nav>
   <div class="logo">DINESH<span>.</span></div>
   <div class="nav-links" id="navLinks">
@@ -297,12 +281,11 @@ footer .socials a:hover{color:var(--neon);}
   </div>
   <button class="nav-toggle" id="navToggle" aria-label="menu"><span></span><span></span><span></span></button>
 </nav>
-
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-grid">
     <div class="reveal in">
-      <div class="eyebrow">Video Editor &amp; Cyber Security</div>
+      <div class="eyebrow">Video Editor &amp; Motion Storyteller</div>
       <h1>CRAFTING<br>STORIES <em>FRAME</em><br>BY FRAME</h1>
       <p class="lead">I'm Dinesh Kumar M — a video editor turning raw footage into cinematic, high-impact content for colleges, creators, and brands.</p>
       <div class="btn-row">
@@ -320,7 +303,6 @@ footer .socials a:hover{color:var(--neon);}
   </div>
   <div class="scroll-cue">Scroll</div>
 </section>
-
 <!-- ABOUT -->
 <section id="about">
   <div class="section-head reveal">
@@ -353,7 +335,6 @@ footer .socials a:hover{color:var(--neon);}
     </div>
   </div>
 </section>
-
 <!-- SERVICES -->
 <section id="services">
   <div class="section-head reveal">
@@ -388,7 +369,6 @@ footer .socials a:hover{color:var(--neon);}
     </div>
   </div>
 </section>
-
 <!-- SKILLS -->
 <section id="skills">
   <div class="section-head reveal">
@@ -418,7 +398,6 @@ footer .socials a:hover{color:var(--neon);}
     </div>
   </div>
 </section>
-
 <!-- PORTFOLIO -->
 <section id="work">
   <div class="section-head reveal">
@@ -431,14 +410,13 @@ footer .socials a:hover{color:var(--neon);}
     <button class="filter-btn" data-filter="college">College</button>
     <button class="filter-btn" data-filter="social">Social Media</button>
     <button class="filter-btn" data-filter="freelance">Freelance</button>
-    <button class="filter-btn" data-filter="Wedding">Wedding</button>
-    <button class="filter-btn" data-filter="Wedding">Logo Reveal</button>
+    <button class="filter-btn" data-filter="wedding">Wedding</button>
+    <button class="filter-btn" data-filter="logo">Logo Reveal</button>
   </div>
   <div class="work-grid reveal" id="workGrid">
     <!-- work cards injected by JS -->
   </div>
 </section>
-
 <!-- TESTIMONIAL -->
 <section id="testimonial">
   <div class="testimonial-wrap reveal">
@@ -447,7 +425,6 @@ footer .socials a:hover{color:var(--neon);}
     <div class="testimonial-role">Creative Director, Vision Studios</div>
   </div>
 </section>
-
 <!-- CONTACT -->
 <section id="contact">
   <div class="contact-wrap">
@@ -470,7 +447,6 @@ footer .socials a:hover{color:var(--neon);}
     </form>
   </div>
 </section>
-
 <footer>
   <div>© 2026 Dinesh Kumar M. All rights reserved.</div>
   <div class="socials">
@@ -478,7 +454,6 @@ footer .socials a:hover{color:var(--neon);}
     <a href="tel:+919150734657">Phone</a>
   </div>
 </footer>
-
 <!-- VIDEO MODAL -->
 <div class="modal" id="videoModal">
   <div class="modal-content">
@@ -487,7 +462,6 @@ footer .socials a:hover{color:var(--neon);}
     <div class="modal-title" id="modalTitle"></div>
   </div>
 </div>
-
 <script>
 // ---- WORK DATA ----
 const works = [
@@ -499,9 +473,9 @@ const works = [
     thumb: "images/thumb1.jpg"
   },
   {
-    title: "Wedding",
+    title: "Wedding Highlights",
     tag: "Wedding",
-    cat: "Wedding",
+    cat: "wedding",
     drive: "1hvPbR_GsMfl66x8nB90fSU2A84SzifK7",
     thumb: "images/thumb2.jpg"
   },
@@ -511,16 +485,15 @@ const works = [
     cat: "freelance",
     drive: "1xp1TsgS1EzciZ0u8CS2d7jMDqP1WJatb",
     thumb: "images/thumb3.jpg"
-  }
+  },
   {
-    title: "Logo Reveal",
+    title: "Logo Reveal Animation",
     tag: "Logo Reveal",
-    cat: "Logo Reveal",
+    cat: "logo",
     drive: "1Qacvi8Ejqkw2ZeYJqaqL07rfuCUjZZPg",
-    thumb: "images/thumb3.jpg"
+    thumb: "images/thumb4.jpg"
   }
 ];
-
 const grid = document.getElementById('workGrid');
 function render(filter){
   grid.innerHTML = '';
@@ -539,7 +512,6 @@ function render(filter){
   });
 }
 render('all');
-
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
@@ -547,7 +519,6 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
     render(btn.dataset.filter);
   });
 });
-
 // Modal
 const modal = document.getElementById('videoModal');
 const modalBody = document.getElementById('modalBody');
@@ -562,19 +533,16 @@ document.getElementById('modalClose').addEventListener('click', () => {
   modalBody.innerHTML = '';
 });
 modal.addEventListener('click', e => { if(e.target === modal){ modal.classList.remove('open'); modalBody.innerHTML=''; } });
-
 // Nav toggle
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
 navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
 navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
-
 // Reveal on scroll
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('in'); });
 }, {threshold:0.15});
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
 // Skill bars animate on view
 const skillObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -588,22 +556,17 @@ const skillObserver = new IntersectionObserver(entries => {
 }, {threshold:0.3});
 document.querySelectorAll('#skills').forEach(el => skillObserver.observe(el));
 </script>
-
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
 emailjs.init({
     publicKey: "7JBuJUqhKwyBXwJuC"
 });
-
 const contactForm = document.getElementById("contactForm");
-
 contactForm.addEventListener("submit", function (e) {
     e.preventDefault();
-
     const btn = contactForm.querySelector("button");
     btn.innerHTML = "Sending...";
     btn.disabled = true;
-
     emailjs.send(
         "service_p3b5fxm",
         "template_3y2z82m",
